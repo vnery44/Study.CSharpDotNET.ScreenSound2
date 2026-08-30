@@ -44,14 +44,17 @@ void ExibirOpcoesDoMenu()
         case 1:
             MenuRegistrarBanda menu1 = new();
             menu1.Executar(bandasRegistradas);
+            ExibirOpcoesDoMenu();
             break;
         case 2:
             MenuRegistrarAlbum menu2 = new();
             menu2.Executar(bandasRegistradas);
+            ExibirOpcoesDoMenu();
             break;
         case 3:
             MenuMostrarBandas menu3 = new();
             menu3.Executar(bandasRegistradas);
+            ExibirOpcoesDoMenu();
             break;
         case 4:
             MenuAvaliarBanda menu4 = new();
